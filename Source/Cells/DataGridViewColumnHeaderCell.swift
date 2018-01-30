@@ -32,8 +32,8 @@ open class DataGridViewColumnHeaderCell: DataGridViewBaseHeaderCell {
         
     }()
     // MARK: - UIView
-    open override static func initialize() {
-        super.initialize()
+    open override func awakeFromNib() {
+        super.awakeFromNib()
         _ = DataGridViewColumnHeaderCell.__once
     }
     

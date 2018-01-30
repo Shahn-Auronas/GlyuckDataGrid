@@ -26,8 +26,8 @@ open class DataGridViewContentCell: DataGridViewBaseCell {
         }
         
     }()
-    open override static func initialize() {
-        super.initialize()
+    open override func awakeFromNib() {
+        super.awakeFromNib()
         _ = DataGridViewContentCell.__once
     }
 }

@@ -1,3 +1,4 @@
+
 //
 //  DataGridView.swift
 //  Pods
@@ -469,8 +470,8 @@ open class DataGridView: UIView {
 
     // UIView
 
-    open override static func initialize() {
-        super.initialize()
+    open override func awakeFromNib() {
+        super.awakeFromNib()
         _ = DataGridView.__once
     }
 

@@ -239,9 +239,9 @@ open class DataGridView: UIView {
     /// Width for vertical header displayed on left of each row. If zero, vertical headers are not displayed.
     open var rowHeaderWidth: CGFloat = 0
     /// Background color for even rows of zebra-striped tables.
-    open dynamic var row1BackgroundColor: UIColor?
+    @ojbc open dynamic var row1BackgroundColor: UIColor?
     /// Background color for odd rows of zebra-striped tables.
-    open dynamic var row2BackgroundColor: UIColor?
+    @objc open dynamic var row2BackgroundColor: UIColor?
 
     /// Current sort column of data grid view.
     fileprivate(set) open var sortColumn: Int?
